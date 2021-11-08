@@ -16,3 +16,9 @@
 .entry-content > .alignfull {
 	@apply max-w-none;
 }
+
+@layer components {
+  body ul {
+    @apply list-none p-0;
+  }
+}
