@@ -19,7 +19,7 @@ yarn install
 With Tailwind installed, you can then generate your style.css file by running:
 
 ```sh
-npm run dev
+npm run build && npm run dev
 ```
 
 This creates a development build of your theme’s stylesheet.
@@ -32,6 +32,7 @@ Your theme won’t have a flat file structure like _s. Instead, you’ll see the
 hefty-starter-theme
 ├── scripts
 ├── tailwind
+├── sass
 └── theme
 ```
 
@@ -46,6 +47,7 @@ development-website.test
 ├── hefty-starter-theme
 │   ├── scripts
 │   ├── tailwind
+│   ├── sass
 │   └── theme
 ├── log
 ├── provision
@@ -82,6 +84,14 @@ The watch command will run continuously in the background, keeping things up-to-
 Unlike the watch command, the dev command from earlier creates a one-off development build and doesn’t update as you make changes.
 
 Before deployment, you’ll want to create a production build:
+
+For building scss files:
+
+```sh
+npm run build
+```
+
+For building theme files:
 
 ```sh
 npm run prod

@@ -1,13 +1,29 @@
 {
 	"extends": [
-		"stylelint-config-wordpress"
+		"@wordpress/stylelint-config"
 	],
 	"rules": {
 		"font-family-no-missing-generic-family-keyword": null,
+		"color-named": null,
+		"font-family-name-quotes": null,
 		"no-descending-specificity": null,
 		"block-no-empty": null,
 		"no-duplicate-selectors": null,
 		"font-family-no-duplicate-names": null,
-		"selector-class-pattern": null
+		"selector-class-pattern": null,
+		"indentation": "tab",
+		"function-url-quotes": null,
+		"selector-attribute-quotes": null,
+		"declaration-block-no-duplicate-properties": null,
+		"function-calc-no-unspaced-operator": null,
+		"selector-pseudo-class-no-unknown": null,
+		"font-weight-notation": null,
+		"selector-type-no-unknown": null,
+		"max-line-length": null,
+		"at-rule-empty-line-before": null,
+		"selector-pseudo-element-colon-notation": null,
+		"number-leading-zero": null,
+		"length-zero-no-unit": [true, {"ignore": ["custom-properties"]}],
+		"no-eol-whitespace": null
 	}
 }
